@@ -1,0 +1,68 @@
+<!Doctype html>
+
+<head>
+    <title> Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 align="center">Welcome to my Web App!</h1>
+
+    <div align="center" class="container">
+        <div class="child">
+            <h2> Led1</h2>
+        </div>
+        <div class="child1">
+            <label class="switch">
+        <input id="myCheckBox" onclick="getValue()" type="checkbox">
+        <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div align="center" class="container">
+        <div class="child">
+            <h2> Led2</h2>
+        </div>
+        <div class="child1">
+            <label class="switch">
+            <input id="myCheckBox2" onclick="getValue2()" type="checkbox">
+            <span class="slider round"></span>
+                </label>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBHWHv2vUyWTR4-qvUBMMunLmWCRpZn9Qs",
+            authDomain: "web-app-947f4.firebaseapp.com",
+            databaseURL: "https://web-app-947f4.firebaseio.com",
+            projectId: "web-app-947f4",
+            storageBucket: "",
+            messagingSenderId: "738234018539"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
